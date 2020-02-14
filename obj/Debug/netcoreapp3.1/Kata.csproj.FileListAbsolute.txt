@@ -1,0 +1,11 @@
+C:\Users\Paweł Pabiańczyk\Documents\studia\Nauka C#\Kata\Kata\Kata\bin\Debug\netcoreapp3.1\Kata.exe
+C:\Users\Paweł Pabiańczyk\Documents\studia\Nauka C#\Kata\Kata\Kata\bin\Debug\netcoreapp3.1\Kata.deps.json
+C:\Users\Paweł Pabiańczyk\Documents\studia\Nauka C#\Kata\Kata\Kata\bin\Debug\netcoreapp3.1\Kata.runtimeconfig.json
+C:\Users\Paweł Pabiańczyk\Documents\studia\Nauka C#\Kata\Kata\Kata\bin\Debug\netcoreapp3.1\Kata.runtimeconfig.dev.json
+C:\Users\Paweł Pabiańczyk\Documents\studia\Nauka C#\Kata\Kata\Kata\bin\Debug\netcoreapp3.1\Kata.dll
+C:\Users\Paweł Pabiańczyk\Documents\studia\Nauka C#\Kata\Kata\Kata\bin\Debug\netcoreapp3.1\Kata.pdb
+C:\Users\Paweł Pabiańczyk\Documents\studia\Nauka C#\Kata\Kata\Kata\obj\Debug\netcoreapp3.1\Kata.csprojAssemblyReference.cache
+C:\Users\Paweł Pabiańczyk\Documents\studia\Nauka C#\Kata\Kata\Kata\obj\Debug\netcoreapp3.1\Kata.AssemblyInfoInputs.cache
+C:\Users\Paweł Pabiańczyk\Documents\studia\Nauka C#\Kata\Kata\Kata\obj\Debug\netcoreapp3.1\Kata.AssemblyInfo.cs
+C:\Users\Paweł Pabiańczyk\Documents\studia\Nauka C#\Kata\Kata\Kata\obj\Debug\netcoreapp3.1\Kata.dll
+C:\Users\Paweł Pabiańczyk\Documents\studia\Nauka C#\Kata\Kata\Kata\obj\Debug\netcoreapp3.1\Kata.pdb
