@@ -43,7 +43,7 @@ namespace Kata
             return result;
         }
 
-        //Find The Parity Outlier
+        //Find The Parity Outlier 6kyu
         public static int Find(int[] integers)
         {
             List<int> odd = new List<int>();
@@ -86,9 +86,6 @@ namespace Kata
 
         static void Main(string[] args)
         {
-            int[] tab = new int[]{2,4,8,1};
-            Console.WriteLine(tab.Count());
-            Program.Find(tab);
         }
     }
 }
