@@ -14,6 +14,16 @@ namespace Kata
             return Int32.Parse(result);
         }
 
+        //You're a square! 7kyu
+        public static bool IsSquare(int n)
+        {
+            var result = (int)Math.Sqrt(n);
+            if (Math.Pow(result, 2) == n)
+                return true;
+            else
+                return false;
+        }
+
         static void Main(string[] args)
         {
         }
