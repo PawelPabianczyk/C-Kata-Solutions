@@ -24,6 +24,23 @@ namespace Kata
                 return false;
         }
 
+        //Sum of Digits / Digital Root 6kyu
+        public static int DigitalRoot(long n)
+        {
+            var number = n.ToString();
+            int result = 0;
+            for (int i = 0; number.Length > 1 && i < number.Length; i++)
+            {
+                result = 0;
+                foreach (var c in number)
+                {
+                    result += (int)Char.GetNumericValue(c);
+                }
+                number = result.ToString();
+            }
+            return result;
+        }
+
         static void Main(string[] args)
         {
         }
