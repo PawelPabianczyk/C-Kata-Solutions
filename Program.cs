@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata.Ecma335;
 
 namespace Kata
 {
@@ -85,7 +83,7 @@ namespace Kata
             return -1;
         }
 
-        //Stop gninnipS My sdroW!
+        //Stop gninnipS My sdroW! 6kyu
         public static string SpinWords(string sentence)
         {
             var words = sentence.Split(' ');
@@ -104,6 +102,37 @@ namespace Kata
                 }
             }
             return result.TrimEnd();
+        }
+
+        //Duplicate Encoder 6kyu
+        public static string DuplicateEncode(string word)
+        {
+            var unique = new HashSet<char>(word = word.ToLower());
+            if (unique.Contains('('))
+            {
+                if (word.IndexOf('(') != word.LastIndexOf('('))
+                    word = word.Replace('(', 'A');
+                unique.Remove('(');
+            }
+
+            if (unique.Contains(')'))
+            {
+                if (word.IndexOf(')') == word.LastIndexOf(')'))
+                    word = word.Replace(')', '(');
+                unique.Remove(')');
+            }
+
+            if(word.Contains('A'))
+                word = word.Replace('A', ')');
+
+            foreach (var c in unique)
+            {
+                if (word.IndexOf(c) != word.LastIndexOf(c))
+                    word = word.Replace(c, ')');
+                else
+                    word = word.Replace(c, '(');
+            }
+            return word;
         }
 
         static void Main(string[] args)
