@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 
 namespace Kata
 {
@@ -82,6 +83,27 @@ namespace Kata
                 }
             }
             return -1;
+        }
+
+        //Stop gninnipS My sdroW!
+        public static string SpinWords(string sentence)
+        {
+            var words = sentence.Split(' ');
+            string result = "";
+            foreach (var word in words)
+            {
+                if (word.Length >= 5)
+                {
+                    char[] arr = word.ToCharArray();
+                    Array.Reverse(arr);
+                    result = String.Concat(result, new string(arr), ' ');
+                }
+                else
+                {
+                    result = String.Concat(result, word, ' ');
+                }
+            }
+            return result.TrimEnd();
         }
 
         static void Main(string[] args)
