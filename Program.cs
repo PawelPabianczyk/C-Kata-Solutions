@@ -1,10 +1,64 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Kata
 {
     class Program
     {
+        public static int PositiveSum(int[] arr) => arr.Sum(x => x > 0 ? x : 0);
+
+        public static string Remove_char(string s) => s.Substring(1, s.Length - 2);
+
+        public static String AccumOption1(string s) 
+            => string.Join("-", s.Select((c, i) => char.ToUpper(c) + new string(char.ToLower(c), i)));
+
+        public static String AccumOption2(string s)
+        {
+            string r = "";
+            int i = 0;
+            foreach (var ch in s)
+            {
+                r = char.ToUpper(ch) + new string(char.ToLower(ch), i++);
+            }
+
+            return r.TrimEnd('-');
+        }
+
+        public static string GetMiddle(string s) => s.Substring((s.Length - 1) / 2, s.Length % 2 == 0 ? 2 : 1);
+
+        public static bool IsIsogramOption1(string str) => str.ToLower().Distinct().Count() == str.Count();
+
+        public static bool IsIsogramOption2(string str)
+        {
+            HashSet<char> set = new HashSet<char>();
+            foreach (char ch in str.ToLower())
+            {
+
+                if (set.Contains(ch))
+                    return false;
+                set.Add(ch);
+            }
+
+            return true;
+        }
+
+        public static int CountBits(int n)
+            => Convert.ToString(n, 2).Sum(c => c == '1' ? 1 : 0);
+
+        public static int GetVowelCount(string str)
+        {
+            int vowelCount = 0;
+
+            foreach (int item in str.ToLower())
+            {
+                if (item == 'a' || item == 'e' || item == 'i' || item == 'o' || item == 'u')
+                    vowelCount++;
+            }
+
+            return vowelCount;
+        }
+
         //Square Every Digit 7kyu
         public static int SquareDigits(int n)
         {
